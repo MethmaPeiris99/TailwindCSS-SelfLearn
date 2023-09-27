@@ -32,7 +32,7 @@ function App() {
 
       <main className='px-16 py-6'>
         <div>
-          <a href="#">Login</a>
+          <a href="#" className='text-primary'>Login</a>
           <a href="#">Signup</a>
         </div>
 
@@ -61,7 +61,7 @@ function App() {
           </div>
 
           <div>
-            <div>Load More</div>
+            <div className='bg-secondary-100 text-secondary-200'>Load More</div>
           </div>
         </div>
       </main>
