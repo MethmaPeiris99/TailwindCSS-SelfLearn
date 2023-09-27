@@ -31,9 +31,9 @@ function App() {
       </div>
 
       <main className='px-16 py-6'>
-        <div>
+        <div className='flex justify-end'>
           <a href="#" className='text-primary'>Login</a>
-          <a href="#">Signup</a>
+          <a href="#" className='text-primary ml-2'>Signup</a>
         </div>
 
         <header>
@@ -60,7 +60,7 @@ function App() {
             {/* cards go here */}
           </div>
 
-          <div>
+          <div className='flex justify-center'>
             <div className='bg-secondary-100 text-secondary-200'>Load More</div>
           </div>
         </div>
