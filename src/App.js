@@ -31,7 +31,7 @@ function App() {
       </div>
 
       <main className='px-16 py-6'>
-        <div className='flex justify-end'>
+        <div className='flex justify-center md:justify-end'>
           <a href="#" className='text-primary'>Login</a>
           <a href="#" className='text-primary ml-2'>Signup</a>
         </div>
