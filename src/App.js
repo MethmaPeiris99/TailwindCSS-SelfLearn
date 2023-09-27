@@ -8,7 +8,7 @@ function App() {
           <nav>
             <div>
               <h1 className='font-bold uppercase p-4 border-b border-gray-100'>
-                <a href="/">Foodies</a>
+                <a href="/" className='hover:text-gray-700'>Foodies</a>
               </h1>
             </div>
             <ul>
@@ -42,8 +42,8 @@ function App() {
 
         <main className='px-16 py-6 bg-gray-100 md:col-span-2'>
           <div className='flex justify-center md:justify-end'>
-            <a href="#" className='btn text-primary border-primary md:border-2'>Login</a>
-            <a href="#" className='btn text-primary ml-2 border-primary md:border-2'>Signup</a>
+            <a href="#" className='btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white'>Login</a>
+            <a href="#" className='btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white'>Signup</a>
           </div>
 
           <header>
@@ -55,7 +55,7 @@ function App() {
             <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>Latest Recipes</h4>
 
             <div className='mt-8 grid lg:grid-cols-3 gap-10'>
-              <div className='card'>
+              <div className='card hover:shadow-lg'>
                 <img src="images/stew.jpg" alt="stew" className='w-full h-32 sm:h-48 object-cover'/>
                 <div className='m-4'>
                   <span className='font-bold'>5 Bean Chilli Stew</span>
@@ -67,7 +67,7 @@ function App() {
                 </div>
               </div>
 
-              <div className='card'>
+              <div className='card hover:shadow-lg'>
                 <img src="images/noodles.jpg" alt="noodles" className='w-full h-32 sm:h-48 object-cover'/>
                 <div className='m-4'>
                   <span className='font-bold'>Veg Noodles</span>
@@ -79,7 +79,7 @@ function App() {
                 </div>
               </div>
 
-              <div className='card'>
+              <div className='card hover:shadow-lg'>
                 <img src="images/curry.jpg" alt="curry" className='w-full h-32 sm:h-48 object-cover'/>
                 <div className='m-4'>
                   <span className='font-bold'>Tofu Curry</span>
@@ -99,7 +99,7 @@ function App() {
             </div>
 
             <div className='flex justify-center'>
-              <div className='btn bg-secondary-100 text-secondary-200'>Load More</div>
+              <div className='btn bg-secondary-100 text-secondary-200 hover:shadow-inner'>Load More</div>
             </div>
           </div>
         </main>
