@@ -1,17 +1,37 @@
 import './App.css';
 
-function App() {
+const App = () => {
+  
+  // const burger = document.querySelector('#burger');
+  // const menu = document.querySelector('#menu');
+
+  // if (burger) {
+  //   burger.addEventListener('click', () => {
+  //     if (menu.classList.contains('hidden')) {
+  //       menu.classList.remove('hidden');
+  //     }
+  //     else {
+  //       menu.classList.add('hidden');
+  //     }
+  //   })
+  // }
+  
   return (
     <body className='text-gray-600 font-body'>
       <div className='grid md:grid-cols-3'>
         <div className='md:col-span-1 md:flex md:justify-end'>
           <nav className='text-right'>
-            <div>
+            <div className='flex justify-between items-center'>
               <h1 className='font-bold uppercase p-4 border-b border-gray-100'>
                 <a href="/" className='hover:text-gray-700'>Foodies</a>
               </h1>
+              <div className='px-4 cursor-pointer md:hidden' id='burger'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+              </div>
             </div>
-            <ul className='text-sm mt-6'>
+            <ul className='text-sm mt-6 hidden md:block' id='menu'>
               <li className='text-gray-700 font-bold py-1'>
                 <a href="#" className='px-4 flex justify-end border-r-4 border-primary'>
                   <span>Home</span>
@@ -42,8 +62,8 @@ function App() {
 
         <main className='px-16 py-6 bg-gray-100 md:col-span-2'>
           <div className='flex justify-center md:justify-end'>
-            <a href="#" className='btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white'>Login</a>
-            <a href="#" className='btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white'>Signup</a>
+            <a href="#" className='btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'>Login</a>
+            <a href="#" className='btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'>Signup</a>
           </div>
 
           <header>
@@ -99,7 +119,7 @@ function App() {
             </div>
 
             <div className='flex justify-center'>
-              <div className='btn bg-secondary-100 text-secondary-200 hover:shadow-inner'>Load More</div>
+              <div className='btn bg-secondary-100 text-secondary-200 hover:shadow-inner hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300'>Load More</div>
             </div>
           </div>
         </main>
